@@ -1,0 +1,116 @@
+{
+  "projectType": "frontend",
+  "projectName": "Etsuko",
+  "projectDescription": "A karaoke application with real-time lyrics display and music player interface",
+  "theme": "palm",
+  "primaryColor": "#9B59B6",
+  "lightColor": "#BB8FCE",
+  "darkColor": "#6C3483",
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "Documentation",
+        "groups": [
+          {
+            "group": "Get Started",
+            "pages": [
+              "introduction",
+              "quickstart"
+            ]
+          },
+          {
+            "group": "Building",
+            "pages": [
+              "building/desktop",
+              "building/web"
+            ]
+          },
+          {
+            "group": "Usage",
+            "pages": [
+              "usage/song-format",
+              "usage/configuration",
+              "usage/playing-songs"
+            ]
+          },
+          {
+            "group": "Components",
+            "pages": [
+              "components/ui-system",
+              "components/audio-playback",
+              "components/renderer",
+              "components/song-parser"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "API Reference",
+        "groups": [
+          {
+            "group": "Core",
+            "pages": [
+              "api/etsuko",
+              "api/karaoke",
+              "api/config"
+            ]
+          },
+          {
+            "group": "UI System",
+            "pages": [
+              "api/ui",
+              "api/renderer",
+              "api/events"
+            ]
+          },
+          {
+            "group": "Media",
+            "pages": [
+              "api/audio",
+              "api/song"
+            ]
+          },
+          {
+            "group": "Utilities",
+            "pages": [
+              "api/container-utils",
+              "api/string-utils"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "keyFeatures": [
+    "Real-time synchronized lyrics display",
+    "Custom song format with timing and reading hints",
+    "OpenGL-based rendering with animations and effects",
+    "Audio playback with MP3 support via OpenAL",
+    "WebAssembly support for browser deployment",
+    "Customizable UI with gradient backgrounds and themes",
+    "Font override support for multiple writing systems",
+    "Dynamic fill and pulse effects for active lyrics",
+    "Album art display with shadows and effects",
+    "Menu mode for song selection"
+  ],
+  "publicApiSurface": [
+    "global_init() - Initialize application",
+    "global_finish() - Clean up resources",
+    "global_mode_switch() - Switch between karaoke/menu modes",
+    "karaoke_init() - Initialize karaoke mode",
+    "karaoke_loop() - Main karaoke loop",
+    "ui_init() - Initialize UI system",
+    "ui_make_text() - Create text drawable",
+    "ui_make_image() - Create image drawable",
+    "ui_make_container() - Create UI container",
+    "ui_animate_* - Animation functions",
+    "audio_init() - Initialize audio system",
+    "audio_load() - Load audio file",
+    "audio_resume() - Resume playback",
+    "audio_pause() - Pause playback",
+    "audio_seek() - Seek to position",
+    "song_load() - Parse song file",
+    "song_get() - Get current song",
+    "config_get() - Get configuration"
+  ]
+}
